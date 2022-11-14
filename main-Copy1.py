@@ -8,11 +8,11 @@ from src.functions_to_run import main as solomain
 
 saved_posts='src/fb_saved_posts.pkl'
 
-EMAIL = "toscrape98@gmail.com"
-PASSWORD = "ineedtoscrape98!"
+EMAIL = "XXX"
+PASSWORD = "XXX"
 
-query='raffineria venezia'
-words=['eni','clima','ricercatori','sciopero','trivelle']
+query='I want this post'
+words=['company name','war','environment','financial']
 
 with open(saved_posts, 'rb') as f:
     already_saved=pickle.load(f)
