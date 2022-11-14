@@ -50,7 +50,7 @@ def get_clen_text(t):
     t=t[0]
     try:
         if "· Shared with" in t.split('Public')[1]:
-            return t.split('Public')[1].split("See more")[0]+' STA CITANDO: '+t.split('Public')[2].split("See more")[0]
+            return t.split('Public')[1].split("See more")[0]+' CITING: '+t.split('Public')[2].split("See more")[0]
         else:
             return t.split('Public')[1].split("See more")[0]
     except:
@@ -92,7 +92,7 @@ def main(query,words,EMAIL,PASSWORD,already_saved):
         browser.find_element(By.XPATH,"/html/body/div[1]/div/div/div/div/div/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div[3]/div/div/div/div/div[1]/div[1]").click()
         time.sleep(2)
     except:
-        print("PROBLEMI AD ACCETTARE I COOKIE........ IN CASO DI ERRORE RIPROVARE A GIRARE IL CODICE")
+        print("RERUN")
         pass
         
     
