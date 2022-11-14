@@ -181,10 +181,9 @@ def main(query,words,EMAIL,PASSWORD,already_saved):
     df_urls=pd.Series(final_dict_urls).T
     df['new_dates']=df_dates
     df['date']=df['complete_text'].apply(get_date)
-    df['author']=df['complete_text'].apply(get_auth)
     df['clean']=df['complete_text'].apply(get_clen_text)
     df['urls']=df_urls
-    df2=df[['new_dates','date','author','clean','keywords','urls']]
+    df2=df[['new_dates','date','clean','keywords','urls']]
     return df2,already_saved
 
 
